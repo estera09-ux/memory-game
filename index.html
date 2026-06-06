@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"
+    integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ=="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- GAME HEADER -->
+  <div class="game-header">
+    <div class="timer-box">
+      <h1 id="time-left"></h1>
+    </div>
+
+    <div id="slide-bar">
+      <div class="custom-slider">
+        <div class="fill"></div>
+      </div>
+    </div>
+
+    <div class="score-box">
+      <h2>Score <span id="score"></span></h2>
+    </div>
+  </div>
+
+  <!-- GAME OVER MESSAGE -->
+  <h3 id="gameOver"></h3>
+
+  <!-- GAME BOARD — 12 cards to match arrayCards in JS -->
+  <div id="grid-container">
+    <img class="card" data-id="0" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="1" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="2" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="3" src="assets/images/dc-comics.png" alt="background cover">
+
+    <img class="card" data-id="4" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="5" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="6" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="7" src="assets/images/dc-comics.png" alt="background cover">
+
+    <img class="card" data-id="8" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="9" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="10" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="11" src="assets/images/dc-comics.png" alt="background cover">
+
+    <img class="card" data-id="12" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="13" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="14" src="assets/images/dc-comics.png" alt="background cover">
+    <img class="card" data-id="15" src="assets/images/dc-comics.png" alt="background cover">
+  </div>
+
+  <!-- GAME BUTTONS -->
+  <div class="btn-game">
+    <button type="button" id="start-button" onclick="themeSong()">Start</button>
+    <button type="button" id="reset-button">Reset</button>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
